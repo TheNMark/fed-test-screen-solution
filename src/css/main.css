@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+}
+
+#q4Wrapper {
+  background-color: #2A3035;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+#q4Wrapper h1, #q4Wrapper h3 {
+  margin: 0;
+}
+#q4Wrapper h1 {
+  font-size: 48px;
+}
+#q4Wrapper h3 {
+  font-size: 14px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+#q4Wrapper header, #q4Wrapper footer {
+  background-color: #22272B;
+}
+#q4Wrapper header {
+  padding: 20px;
+}
+#q4Wrapper footer {
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+#q4Wrapper article {
+  text-align: center;
+}
+#q4Wrapper article img {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+}
+#q4Wrapper a {
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  transition: transform 0.3s ease;
+}
+#q4Wrapper a:hover {
+  transform: scale(1.05);
+}
+#q4Wrapper a span {
+  opacity: 0.5;
+}
+
+.layout_inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+.layout_header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Begin styling the report items here! */ 
+
+body{
+  background-color: rgb(44, 48, 52);
+}
+
+.reports {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+  justify-items: center;
+  align-items: center;
+}
+
+.layout_title {
+  background-color: rgb(36, 39, 42);
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+  color: white;
+  padding: 15px;
+  margin-top: 0px;
+}
+
+.reports_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.reports_cover {
+  height: 250px;
+  width: 210px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  align-self: center;
+}
+
+.reports_docs {
+  background-color: rgb(36, 39, 42);
+  padding: 10px;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.reports_docs h3 {
+  margin-top: 2px;
+  margin-bottom: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.reports_docs h3 a {
+  color: white;
+  text-decoration: none;
+}
+
+.reports_docs h3 a span {
+  color: rgb(145, 147, 148);
+}
+
+@media screen and (max-width: 768px) {
+  .reports {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
